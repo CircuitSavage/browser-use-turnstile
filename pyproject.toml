@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "browser-use-turnstile"
+version = "0.1.0"
+description = "A browser-use action that solves Cloudflare Turnstile via the Peak API: reads the sitekey, solves it, puts the token back in the page."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "Peak" }]
+dependencies = ["browser-use>=0.13"]
+keywords = [
+    "browser-use",
+    "ai-agent",
+    "llm-agent",
+    "cloudflare",
+    "turnstile",
+    "captcha",
+    "solver",
+    "web-scraping",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+]
+
+[project.urls]
+Homepage = "https://peak.fo/?utm_source=pypi&utm_medium=package&utm_campaign=packages&utm_content=browser-use-turnstile"
+Repository = "https://github.com/CircuitSavage/browser-use-turnstile"
+
+[tool.hatch.build.targets.wheel]
+packages = ["browser_use_turnstile"]
