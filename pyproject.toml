@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "browser-use-turnstile"
-version = "0.1.0"
+version = "0.1.1"
 description = "A browser-use action that solves Cloudflare Turnstile via the Peak API: reads the sitekey, solves it, puts the token back in the page."
 readme = "README.md"
 license = { text = "MIT" }
